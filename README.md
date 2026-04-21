@@ -6,41 +6,35 @@ Um aplicativo moderno de gerenciamento financeiro construído com **Angular 20**
 
 Este projeto foi desenvolvido para explorar e dominar os seguintes conceitos avançados do Angular:
 
-### 1. **Construir Apps Reativas com Signals API**
+### 1. **Dominar os Fundamentos**
+Se você está começando, não se preocupe! Temos um módulo opcional dedicado aos conceitos essenciais do Angular.
 
+### 2. **Construir Apps Reativas com Signals API**
 Aprenda a criar aplicações dinâmicas e de alta performance usando a revolucionária Signals API para gerenciamento de estado.
 
-### 2. **Gerenciar Requisições como um Profissional**
-
+### 3. **Gerenciar Requisições como um Profissional**
 Explore a nova Resource API (httpResource) para lidar com requisições HTTP de forma reativa e eficiente.
 
-### 3. **Desvendar o Desenvolvimento Zoneless**
-
+### 4. **Desvendar o Desenvolvimento Zoneless**
 Entenda e aplique o conceito Zoneless em suas aplicações, eliminando o Zone.js para ganhos significativos de performance.
 
-### 4. **Integrar RxJS e Signals**
-
+### 5. **Integrar RxJS e Signals**
 Saiba como combinar o poder do RxJS com a eficiência das Signals, usando a API de interoperabilidade.
 
-### 5. **Implementar Autenticação Robusta**
-
+### 6. **Implementar Autenticação Robusta**
 Crie fluxos de autenticação seguros com Functional Interceptors, Guards, Resolvers e o elegante Facade Pattern.
 
-### 6. **Desenvolver Componentes Inteligentes**
-
+### 7. **Desenvolver Componentes Inteligentes**
 Crie Pipes e Diretivas customizadas, utilizando a Directive Composition API para um código mais limpo e organizado.
 
-### 7. **Otimizar a Performance**
-
+### 8. **Otimizar a Performance**
 Use o Defer Block para carregar elementos pesados sob demanda, garantindo páginas mais rápidas.
 
-### 8. **Criar Formulários Dinâmicos**
-
+### 9. **Criar Formulários Dinâmicos**
 Domine a construção de formulários inteligentes com Reactive Forms e Signals.
 
-### 9. **Construir Dashboards Profissionais**
-
-Desenvolva uma dashboard completa e elegante utilizando o Angular Material 20.
+### 10. **Construir Dashboards Profissionais**
+Desenvolva uma dashboard completa e elegante utilizando o Angular Material 20+.
 
 ## 🚀 O que está Incluído
 

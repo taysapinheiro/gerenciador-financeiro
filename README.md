@@ -1,59 +1,148 @@
-# GerenciadorFinanceiro
+# Gerenciador Financeiro
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.22.
+Um aplicativo moderno de gerenciamento financeiro construído com **Angular 20** utilizando as tecnologias mais recentes e melhores práticas do framework.
 
-## Development server
+## 🎯 Objetivos de Aprendizado
 
-To start a local development server, run:
+Este projeto foi desenvolvido para explorar e dominar os seguintes conceitos avançados do Angular:
+
+### 1. **Construir Apps Reativas com Signals API**
+
+Aprenda a criar aplicações dinâmicas e de alta performance usando a revolucionária Signals API para gerenciamento de estado.
+
+### 2. **Gerenciar Requisições como um Profissional**
+
+Explore a nova Resource API (httpResource) para lidar com requisições HTTP de forma reativa e eficiente.
+
+### 3. **Desvendar o Desenvolvimento Zoneless**
+
+Entenda e aplique o conceito Zoneless em suas aplicações, eliminando o Zone.js para ganhos significativos de performance.
+
+### 4. **Integrar RxJS e Signals**
+
+Saiba como combinar o poder do RxJS com a eficiência das Signals, usando a API de interoperabilidade.
+
+### 5. **Implementar Autenticação Robusta**
+
+Crie fluxos de autenticação seguros com Functional Interceptors, Guards, Resolvers e o elegante Facade Pattern.
+
+### 6. **Desenvolver Componentes Inteligentes**
+
+Crie Pipes e Diretivas customizadas, utilizando a Directive Composition API para um código mais limpo e organizado.
+
+### 7. **Otimizar a Performance**
+
+Use o Defer Block para carregar elementos pesados sob demanda, garantindo páginas mais rápidas.
+
+### 8. **Criar Formulários Dinâmicos**
+
+Domine a construção de formulários inteligentes com Reactive Forms e Signals.
+
+### 9. **Construir Dashboards Profissionais**
+
+Desenvolva uma dashboard completa e elegante utilizando o Angular Material 20.
+
+## 🚀 O que está Incluído
+
+- **Angular 20.3.x** com suporte completo a Signals
+- **Angular Material 20** para UI profissional
+- **RxJS 7.8** integrado com Signals
+- **Reactive Forms** para gerenciamento de formulários
+- **JSON Server** para simulação de backend
+- **TypeScript** com configurações modernas
+- **SCSS** para estilização avançada
+
+## 📋 Pré-requisitos
+
+Certifique-se de ter instalado:
+
+- **Node.js** (versão 18 ou superior)
+- **npm** (versão 9 ou superior)
+
+## 🛠️ Como Iniciar o Projeto
+
+### 1. Instalar Dependências
 
 ```bash
-ng serve
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 2. Iniciar a Aplicação
 
 ```bash
-ng generate component component-name
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Este comando iniciará simultaneamente:
 
-```bash
-ng generate --help
+- **Servidor de desenvolvimento Angular** em `http://localhost:4200`
+- **JSON Server** em `http://localhost:3000` (para simular o backend)
+
+### Scripts Disponíveis
+
+| Comando                | Descrição                                            |
+| ---------------------- | ---------------------------------------------------- |
+| `npm start`            | Inicia o app Angular e o JSON Server simultaneamente |
+| `npm run start:app`    | Inicia apenas o servidor de desenvolvimento Angular  |
+| `npm run start:server` | Inicia apenas o JSON Server                          |
+| `npm run build`        | Compila o projeto para produção                      |
+| `npm run watch`        | Recompila automaticamente em desenvolvimento         |
+| `npm test`             | Executa testes unitários                             |
+
+## 🗂️ Estrutura do Projeto
+
+```
+src/
+├── app/
+│   ├── core/              # Módulos principais e layout
+│   │   └── layout/        # Componente de layout
+│   ├── features/          # Funcionalidades principais
+│   │   ├── home/          # Dashboard principal
+│   │   └── components/    # Componentes compartilhados de features
+│   ├── shared/            # Serviços e interfaces compartilhadas
+│   │   ├── transaction/   # Tipos e enums de transações
+│   │   └── feedback/      # Serviços de feedback
+│   └── app.ts             # Componente raiz
+├── styles/                # Estilos globais e theme
+└── main.ts                # Entry point
 ```
 
-## Building
+## 🎨 Tecnologias Utilizadas
 
-To build the project run:
+- **Angular 20** - Framework principal
+- **Angular Material 20** - Componentes UI
+- **RxJS** - Programação reativa
+- **Signals API** - Gerenciamento de estado moderno
+- **Reactive Forms** - Gerenciamento de formulários
+- **TypeScript** - Linguagem tipada
+- **SCSS** - Pré-processador CSS
+- **JSON Server** - Backend simulado
 
-```bash
-ng build
-```
+## 📝 Funcionalidades
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- 📊 Dashboard com visualização de transações
+- 💰 Gerenciamento de transações financeiras
+- 💳 Cálculo de balanço automático
+- 🎯 Filtros e buscas avançadas
+- 🎨 Interface responsiva com Material Design
+- ⚡ Performance otimizada com Signals
 
-## Running unit tests
+## 📚 Próximos Passos
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. Explore a pasta `src/app` para entender a estrutura do projeto
+2. Estude os serviços em `src/app/shared/services` para ver a integração com Signals
+3. Revise os componentes em `src/app/features` para ver componentes inteligentes
+4. Implemente novas funcionalidades usando as técnicas aprendidas
 
-```bash
-ng test
-```
+## 🤝 Contribuindo
 
-## Running end-to-end tests
+Este é um projeto de estudo. Sinta-se livre para experimentar, modificar e aprender com o código.
 
-For end-to-end (e2e) testing, run:
+## 📄 Licença
 
-```bash
-ng e2e
-```
+Este projeto está disponível para fins educacionais.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Desenvolvido com ❤️ para aprender Angular moderno**
+# gerenciador-financeiro

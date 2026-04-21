@@ -1,0 +1,19 @@
+<app-balance [transactions]="transactions()"></app-balance>
+<div class="actions">
+  <a matButton="elevated" routerLink="/create-transaction">+</a>
+</div>
+@if (isLoading) {
+  <div class="loader">
+    <mat-progress-spinner class="example-margin" [mode]="'determinate'" [value]="valueSpinner">
+    </mat-progress-spinner>
+  </div>
+} @else {
+  <div class="transactions">
+    @for (item of transactions(); track item) {
+      <app-transaction-item class="transaction-item" [transaction]="item" (edit)="onEdit($event)">
+      </app-transaction-item>
+    } @empty {
+      <app-no-transactions />
+    }
+  </div>
+}

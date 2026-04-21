@@ -1,0 +1,23 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.transactions {
+  margin-top: 24px;
+}
+
+.transaction-item {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.actions {
+  margin: 24px 0;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: -11px;
+  right: 33px;
+  z-index: 1000;
+}

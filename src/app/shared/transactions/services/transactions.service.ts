@@ -25,4 +25,8 @@ export class TransactionsService {
   put(id: number, transaction: TransactionPayload) {
     return this.httpClient.put<Transaction>(`${API_URL}/${id}`, transaction);
   }
+
+  delete(id: number) {
+    return this.httpClient.delete(`${API_URL}/${id}`);
+  }
 }

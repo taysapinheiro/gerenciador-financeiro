@@ -30,6 +30,7 @@ import { FeedbackService } from '../../shared/feedback/services/feedback';
 export class Home implements OnInit {
   private _transactionsService = inject(TransactionsService);
   private _router = inject(Router);
+  private _feedbackService = inject(FeedbackService);
 
   transactions = signal<Transaction[]>([]);
   isLoading = true;
@@ -65,5 +66,23 @@ export class Home implements OnInit {
 
   onEdit(transaction: Transaction) {
     this._router.navigate(['/edit-transaction', transaction.id]);
+  }
+
+  onRemove(transaction: Transaction) {
+    this._transactionsService.delete(transaction.id).subscribe({
+      next: () => {
+        this.removeTransactionFromList(transaction);
+        this._feedbackService.success('Transação removida');
+      },
+      error: () => {
+        this._feedbackService.error('Erro ao remover a transação. Tente novamente.');
+      },
+    });
+  }
+
+  private removeTransactionFromList(transaction: Transaction) {
+    this.transactions.update((transactions) =>
+      transactions.filter((item) => item.id !== transaction.id),
+    );
   }
 }

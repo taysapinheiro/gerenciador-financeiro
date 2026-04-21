@@ -10,7 +10,12 @@
 } @else {
   <div class="transactions">
     @for (item of transactions(); track item) {
-      <app-transaction-item class="transaction-item" [transaction]="item" (edit)="onEdit($event)">
+      <app-transaction-item
+        class="transaction-item"
+        [transaction]="item"
+        (edit)="onEdit($event)"
+        (remove)="onRemove($event)"
+      >
       </app-transaction-item>
     } @empty {
       <app-no-transactions />

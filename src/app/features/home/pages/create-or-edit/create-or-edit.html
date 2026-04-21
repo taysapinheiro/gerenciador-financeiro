@@ -3,13 +3,13 @@
     <mat-progress-bar mode="buffer"></mat-progress-bar>
   </div>
 } @else {
-  <form [formGroup]="transactionForm" class="form" (submit)="submit()">
+  <form [formGroup]="transactionForm()" class="form" (submit)="submit()">
     <div class="toggle-group mb-24">
       <mat-button-toggle-group formControlName="type" aria-label="Font Style">
         <mat-button-toggle [value]="transactionType.OUTCOME">Gasto</mat-button-toggle>
         <mat-button-toggle [value]="transactionType.INCOME">Ganho</mat-button-toggle>
       </mat-button-toggle-group>
-      @if (transactionForm.controls.type.invalid) {
+      @if (transactionForm().controls.type.invalid) {
         <mat-error>O título é obrigatório.</mat-error>
       }
     </div>
@@ -18,7 +18,7 @@
       <mat-label>Título</mat-label>
       <input matInput formControlName="title" required placeholder="Digite o título da transação" />
 
-      @if (transactionForm.controls.title.invalid) {
+      @if (transactionForm().controls.title.invalid) {
         <mat-error>O título é obrigatório.</mat-error>
       }
     </mat-form-field>
@@ -34,13 +34,13 @@
       <span matTextPrefix>R$ &nbsp;</span>
       <span matTextSuffix>,00</span>
 
-      @if (transactionForm.controls.value.invalid) {
+      @if (transactionForm().controls.value.invalid) {
         <mat-error>O valor é obrigatório e deve ser maior que zero.</mat-error>
       }
     </mat-form-field>
 
     <div class="button">
-      <button type="submit" mat-flat-button="filled" [disabled]="transactionForm.invalid">
+      <button type="submit" mat-flat-button="filled" [disabled]="transactionForm().invalid">
         Salvar
       </button>
     </div>

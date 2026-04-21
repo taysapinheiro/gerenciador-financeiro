@@ -1,10 +1,10 @@
 {
   "transactions": [
     {
-      "id": 1,
-      "title": "Salário",
-      "value": 5000,
-      "type": "income"
+      "type": "income",
+      "title": "Salário 5",
+      "value": 5012,
+      "id": 1
     },
     {
       "id": 2,
@@ -197,6 +197,18 @@
       "title": "snackbar como service",
       "value": 0.5,
       "id": 33
+    },
+    {
+      "type": "income",
+      "title": "teste345345345",
+      "value": 0.12,
+      "id": 34
+    },
+    {
+      "type": "income",
+      "title": "teste strategy",
+      "value": 0.12,
+      "id": 35
     }
   ]
 }

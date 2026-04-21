@@ -22,7 +22,7 @@ export class TransactionsService {
     return this.httpClient.post<Transaction>(API_URL, transaction);
   }
 
-  put(id: string, transaction: TransactionPayload) {
+  put(id: number, transaction: TransactionPayload) {
     return this.httpClient.put<Transaction>(`${API_URL}/${id}`, transaction);
   }
 }

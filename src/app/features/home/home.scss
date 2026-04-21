@@ -3,13 +3,32 @@
   justify-content: center;
   margin-top: 10rem;
 }
+
 .transactions {
   margin-top: 24px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.actions:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
 }
 
 .transaction-item {
   display: block;
   margin-bottom: 12px;
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
 }
 
 .actions {

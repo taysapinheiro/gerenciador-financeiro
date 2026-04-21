@@ -12,4 +12,10 @@ export class FeedbackService {
       panelClass: 'snackbar-success-feedback',
     });
   }
+
+  error(message: string) {
+    this._snackBar.open(message, 'Fechar', {
+      panelClass: 'snackbar-error-feedback',
+    });
+  }
 }

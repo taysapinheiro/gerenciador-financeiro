@@ -10,4 +10,13 @@
       )
     );
   }
+  .snackbar-error-feedback {
+    @include mat.snack-bar-overrides(
+      (
+        button-color: var(--mat-sys-on-surface),
+        container-color: var(--custom-color-error),
+        supporting-text-color: rgb(255, 255, 255),
+      )
+    );
+  }
 }
